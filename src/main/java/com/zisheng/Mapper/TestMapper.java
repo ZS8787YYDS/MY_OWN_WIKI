@@ -1,7 +1,7 @@
 package com.zisheng.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zisheng.Pojo.User;
+import com.zisheng.Pojo.Entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.zisheng.Service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.zisheng.Pojo.User;
+import com.zisheng.Pojo.Entity.User;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package com.zisheng.Service.Impls;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zisheng.Mapper.TestMapper;
-import com.zisheng.Pojo.User;
+import com.zisheng.Pojo.Entity.User;
 import com.zisheng.Service.TestService;
 import org.springframework.stereotype.Service;
 

@@ -19,6 +19,13 @@
         <java.version>11</java.version>
     </properties>
     <dependencies>
+        <!--Hutool库-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>5.8.5</version>
+        </dependency>
+
         <!--德鲁伊数据库连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>

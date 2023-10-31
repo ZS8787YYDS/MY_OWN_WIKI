@@ -14,24 +14,21 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Result<T> implements Serializable {
-    private Integer code;
-    private String msg;
-    private T data;
+    private Boolean success = true;
+    private String message;
+    private T content;
     public static <T> Result<T> success()
     {
-        Result<T> result = new Result<>();
-        result.code = 1;
-        return result;
+        return new Result<>();
     }
-    public static <T> Result<T> success(T data)
+    public static <T> Result<T> success(T content)
     {
         Result<T> result = new Result<>();
-        result.code = 1;
-        result.data = data;
+        result.content = content;
         return result;
     }
-    public static <T> Result<T> error(String msg)
+    public static <T> Result<T> error(String message)
     {
-        return new Result<>(0,msg,null);
+        return new Result<>(false,message,null);
     }
 }

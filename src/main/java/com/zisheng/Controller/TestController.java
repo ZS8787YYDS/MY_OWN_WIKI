@@ -1,6 +1,6 @@
 package com.zisheng.Controller;
 
-import com.zisheng.Pojo.User;
+import com.zisheng.Pojo.Entity.User;
 import com.zisheng.ResponseResult.Result;
 import com.zisheng.Service.TestService;
 import io.swagger.annotations.Api;

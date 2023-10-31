@@ -1,4 +1,4 @@
-package com.zisheng.Pojo;
+package com.zisheng.Pojo.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,6 +16,4 @@ public class User implements Serializable {
     private String name;
     private Integer gender;
     private Integer age;
-//    private LocalDateTime createTime;
-//    private LocalDateTime UpdateTime;
 }
