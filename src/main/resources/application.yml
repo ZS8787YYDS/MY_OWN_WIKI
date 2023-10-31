@@ -3,3 +3,19 @@ server:
 spring:
   application:
     name: WIKI
+  # 数据库相关配置
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/wiki
+      username: zisheng
+      password: 8787521
+      # MybatisPlus相关配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: assign_id
+      table-prefix: tb_
