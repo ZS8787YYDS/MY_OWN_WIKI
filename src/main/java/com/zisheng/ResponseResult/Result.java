@@ -30,7 +30,7 @@ public class Result<T> implements Serializable {
         result.data = data;
         return result;
     }
-    public static <T> Result<T> failure(String msg)
+    public static <T> Result<T> error(String msg)
     {
         return new Result<>(0,msg,null);
     }
