@@ -36,7 +36,7 @@ public class EBookServiceImpl extends ServiceImpl<EBookMapper, Ebook> implements
         List<Ebook> ebooks = eBookMapper.selectList(lambdaQueryWrapper);
         return ebooks.stream().map(ebook -> {
             EbookVO ebookVO = new EbookVO();
-            BeanUtils.copyProperties(ebook, ebookVO);
+            BeanUtils.copyProperties(ebook,ebookVO);
             return ebookVO;
         }).collect(Collectors.toList());
     }
