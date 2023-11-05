@@ -35,12 +35,12 @@ public class EBookController {
 //    }
 
     /**
-     * 根据名称模糊查询
+     * 电子书查询接口
      * @param ebookDTO
      * @return
      */
     @GetMapping("/list")
-    @ApiOperation(value = "查询所有电子书")
+    @ApiOperation(value = "电子书查询")
     public Result<List<EbookVO>> selectByName(EbookDTO ebookDTO) {
         log.info("接收到的数据为：{}",ebookDTO);
         List<EbookVO> list = eBookService.selectByName(ebookDTO);

@@ -20,12 +20,22 @@ import java.util.List;
 public class TestController {
     @Resource
     private TestService testService;
+
+    /**
+     * 字符串测试接口
+     * @return
+     */
     @GetMapping
     @ApiOperation(value = "字符串测试")
     public Result<String> test_01()
     {
         return Result.success("ZiSheng8787");
     }
+
+    /**
+     * 员工查询接口
+     * @return
+     */
     @GetMapping("/users")
     @ApiOperation(value = "员工查询测试")
     public Result<List<User>> selectAll()
