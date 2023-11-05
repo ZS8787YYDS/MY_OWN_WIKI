@@ -19,6 +19,10 @@
         <java.version>11</java.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
         <!--Hutool库，含有很多的工具类-->
         <dependency>
             <groupId>cn.hutool</groupId>
