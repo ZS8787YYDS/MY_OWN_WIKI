@@ -29,7 +29,7 @@ public class TestController {
     @ApiOperation(value = "字符串测试")
     public Result<String> test_01()
     {
-        return Result.success("ZiSheng8787");
+        return Result.success("ZISHENG_YYDS");
     }
 
     /**

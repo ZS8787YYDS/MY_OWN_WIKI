@@ -19,6 +19,13 @@
         <java.version>11</java.version>
     </properties>
     <dependencies>
+        <!--fastjson的依赖，用于对象与JSON字符串之间的转换-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
+        </dependency>
+        <!--SpringAop的依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>

@@ -1,10 +1,8 @@
 package com.zisheng.Config;
 
-import com.zisheng.Interceptors.TestInterceptor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -14,19 +12,17 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
-import javax.annotation.Resource;
-
 @Configuration
 @Slf4j
 public class MyConfiguration implements WebMvcConfigurer {
-    @Resource
-    private TestInterceptor testInterceptor;
-
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(testInterceptor).addPathPatterns("/**");
-        log.info("拦截器注册成功！！！");
-    }
+//    @Resource
+//    private TestInterceptor testInterceptor;
+//
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(testInterceptor).addPathPatterns("/**");
+//        log.info("拦截器注册成功！！！");
+//    }
 
     /**
      * 通过Knife4j生成接口文档

@@ -3,6 +3,7 @@ package com.zisheng.Service.Impls;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.zisheng.Annotation.AOPAnnotation;
 import com.zisheng.Mapper.EBookMapper;
 import com.zisheng.Pojo.DTO.EbookDTO;
 import com.zisheng.Pojo.Entity.Ebook;
@@ -28,7 +29,7 @@ public class EBookServiceImpl extends ServiceImpl<EBookMapper, Ebook> implements
      * @param ebookDTO
      * @return
      */
-    @Override
+    @AOPAnnotation
     public List<EbookVO> selectByName(EbookDTO ebookDTO) {
         LambdaQueryWrapper<Ebook> lambdaQueryWrapper = new LambdaQueryWrapper<>();
         lambdaQueryWrapper
